@@ -1,0 +1,97 @@
+ * { 
+        margin: 0; 
+        padding:0; 
+        box-sizing:border-box; 
+        font-family:cursive;
+     }
+
+    body {
+        display: grid;
+        place-items: center;
+        background: rgb(168, 216, 235);
+        padding: 20px;
+    }
+
+    body h1 {
+        padding: 40px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    form#registerform {
+      background: #f9f9f9;
+      padding:20px;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    }  
+
+    /* Input styles */
+    form#registerform input {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    form#registerform input:focus {
+      border-color: #007BFF;
+      outline: none;
+      box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
+    }
+
+    /* Button style */
+    form#registerform button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form#registerform button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    /* Table styling */
+    table#dataTable {
+      margin-top: 40px;
+      width: 100%;
+      max-width: 600px;
+      border-collapse: collapse;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    table#dataTable th,
+    table#dataTable td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    table#dataTable tbody {
+        background-color: aliceblue;
+    }
+
+    table#dataTable thead {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 500px) {
+      form#registerform, table#dataTable {
+        width: 100%;
+        padding: 0 10px;
+        box-shadow: none;
+      }
+    }
