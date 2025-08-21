@@ -4,6 +4,17 @@ document.getElementById("registerform").addEventListener("submit", function(e){
             const email = document.getElementById("email").value;
             const phone_number = document.getElementById("phone_number").value;
             const tanggal_lahir = document.getElementById("tanggal_lahir").value;
+            const password = document.getElementById("password").value;
+            
+            const user = {
+                nama: nama, 
+                email: email,
+                phone_number: phone_number,
+                tanggal_lahir: tanggal_lahir,
+                password: password,
+            }
+            
+            alert ("Pendaftarat Sukses!")
 
             const table = document.getElementById("dataTable").getElementsByTagName("tbody")[0];
             const newRow = table.insertRow();
